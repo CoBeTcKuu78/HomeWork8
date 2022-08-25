@@ -20,17 +20,8 @@ public class Main {
             return year;
         }
     }
-
     public static void main(String[] args) {
         chekLeapYear();
-        /*int year = 203;
-
-        if ((year % 4 == 0) && year % 100 != 0) {
-            System.out.println(year + " год високосный");
-        } else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0)) {
-            System.out.println(year + " год високосный");
-        } else {
-            System.out.println(year + " год не високосный");*/
     }
 }
 
