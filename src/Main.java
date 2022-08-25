@@ -8,7 +8,29 @@
  Если год не високосный, то, соответственно: “*номер года —* не **високосный год”.
  */
 public class Main {
+    public static int chekLeapYear() {
+        int year = 2020;
+        boolean leapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
+        {
+            if (leapYear) {
+                System.out.println(year + " " + "високосный");
+                return year;
+            }
+            System.out.println(year + " " + "не високосный");
+            return year;
+        }
+    }
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        chekLeapYear();
+        /*int year = 203;
+
+        if ((year % 4 == 0) && year % 100 != 0) {
+            System.out.println(year + " год високосный");
+        } else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0)) {
+            System.out.println(year + " год високосный");
+        } else {
+            System.out.println(year + " год не високосный");*/
     }
 }
+
